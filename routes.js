@@ -21,4 +21,16 @@ router.put    ("/articulos/:id", cors(), controller.updateArticulo); // Update
 router.post   ("/articulos",     cors(), controller.createArticulo); // Create
 
 
+router.get    ("/distribuidores",     cors(), controller.readDistribuidores);  // Read All
+router.get    ("/distribuidores/:id", cors(), controller.readDistribuidor);   // Read
+router.delete ("/distribuidores/:id", cors(), controller.deleteDistribuidor); // Delete
+router.put    ("/distribuidores/:id", cors(), controller.updateDistribuidor); // Update
+router.post   ("/distribuidores",     cors(), controller.createDistribuidor); // Create
+
+router.get    ("/Productos",      cors(), controller.readProductos);   // Read All
+router.get    ("/Productos/:id",  cors(), controller.readProducto);    // Read
+router.delete ("/Productos/:id",  cors(), controller.deleteProducto);  // Delete
+router.put    ("/Productos/:id",  cors(), controller.updateProducto);  // Update
+router.post   ("/Productos",      cors(), controller.createProducto);  // Create
+
 module.exports = router;
